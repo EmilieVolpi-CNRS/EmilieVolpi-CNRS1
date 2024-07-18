@@ -108,6 +108,16 @@ CREATE TABLE "BREF"."Mandat"(
     "CorrectionsAutres" boolean
 );
 
+-- Table: Fonction
+CREATE TABLE "BREF"."Fonction"(
+	"IdFonction" integer DEFAULT nextval('"newBREF".id_fonction_seq'::regclass) NOT NULL,
+    "DateDebutFonction" date,
+    "DateFinFonction" date,
+    "MotifFinFonction" character varying(250),
+    "TypeDeFonction_IdTypeFonction" integer NOT NULL,
+    "IdMandat" integer
+);
+
 -- Table: NuancePolitique
 CREATE TABLE "BREF"."NuancePolitique"(
     "IdNuancePolitique" integer DEFAULT nextval('"BREF".id_nuance_seq'::regclass) NOT NULL,
