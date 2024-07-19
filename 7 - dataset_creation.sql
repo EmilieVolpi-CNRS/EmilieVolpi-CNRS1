@@ -89,6 +89,18 @@ update "BREF"."Mandate" set "ReasonEndMandate" = 'FM'
 where "ReasonEndMandate" = 'FIN DE MANDAT';
 update "BREF"."Mandate" set "ReasonEndMandate" = 'MEMBRE GOUVERNEMENT'
 where "ReasonEndMandate" = 'NOMINATION COMME MEMBRE DU GOUVERNEMENT';
+update "BREF"."Mandate" set "ReasonEndMandate" = 'AUTRE'
+where "ReasonEndMandate" = 'AU';
+update "BREF"."Mandate" set "ReasonEndMandate" = 'DECES'
+where "ReasonEndMandate" = 'DC';
+update "BREF"."Mandate" set "ReasonEndMandate" = 'DEMISSION D OFFICE'
+where "ReasonEndMandate" = 'DO';
+update "BREF"."Mandate" set "ReasonEndMandate" = 'DEMISSION VOLONTAIRE'
+where "ReasonEndMandate" = 'DV';
+update "BREF"."Mandate" set "ReasonEndMandate" = 'FIN DE MANDAT'
+where "ReasonEndMandate" = 'FM';
+update "BREF"."Mandate" set "ReasonEndMandate" = 'NOMME AU GOUVERNEMENT'
+where "ReasonEndMandate" = 'MEMBRE GOUVERNEMENT';
 
 --type Area
 
