@@ -110,3 +110,25 @@ where "TypeArea" = 'Nation';
 
 delete from "BREF"."Area"
 where "TypeArea" = 'Departement';
+
+
+
+--departmentEPCI
+
+update "BREF"."Area" set "NameArea" = '1976_90' where "IdArea" = '01793_90';
+update "BREF"."Area" set "NameArea" = '1976_19' where "IdArea" = '01793_19';
+
+insert into "BREF"."Inclusion" ("IdAreaIncluded", "IdAreaIncluding")
+SELECT T2."IdArea" as "EPCI", T1."NameArea" as "departement"
+FROM "BREF"."Inclusion"
+join "BREF"."Area" T1 on T1."IdArea" = "Inclusion"."IdAreaIncluded"
+join "BREF"."Area" T2 on T2."IdArea" = "Inclusion"."IdAreaIncluding"
+where T1."TypeArea" = 'Département EPCI';
+--3182
+
+--on supprime les anciennes inclusions
+delete from "BREF"."Inclusion"
+where "IdAreaIncluded" in
+ (SELECT "IdArea"
+ FROM "BREF"."Area" where "TypeArea" = 'Département EPCI');
+--3182
