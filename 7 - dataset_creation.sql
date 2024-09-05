@@ -132,3 +132,5 @@ where "IdAreaIncluded" in
  (SELECT "IdArea"
  FROM "BREF"."Area" where "TypeArea" = 'Département EPCI');
 --3182
+
+	delete from "BREF"."TypeFunction" where "TypeFunction" = '';
