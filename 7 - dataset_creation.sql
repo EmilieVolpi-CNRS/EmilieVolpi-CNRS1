@@ -133,4 +133,6 @@ where "IdAreaIncluded" in
  FROM "BREF"."Area" where "TypeArea" = 'Département EPCI');
 --3182
 
-	delete from "BREF"."TypeFunction" where "TypeFunction" = '';
+delete from "BREF"."TypeFunction" where "TypeFunction" = '';
+delete from "BREF"."Mandate" where "IdIndividual" = '0';
+delete from "BREF"."Individual" where "LastName" is null;
