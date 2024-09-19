@@ -1,4 +1,5 @@
-# BREF
+BrefConversion
+===================
 
 This repository contains all SQL script that were played on BREF database from its creation, including creation, migration of data, constraints, cleanings, evolutions etc
 
@@ -29,18 +30,16 @@ You just need to install PostgreSQL or have access to a distant PostgreSQL datab
 ## Use
 
 Launch each PosgreSQl script in order
-[mettre DOI de la v1.1.0)
+The data source is the cvs file : https://doi.org/10.5281/zenodo.12773349 -> it should be imported in the PostgreSQL so that the script
 
-
-## Realeases
-
-V.2.1.1 : https://github.com/BrefAvignon/BREF/releases/tag/v.2.1.1 : Additional adjustments aiming at preparing the database for the future integration of data coming from new alternative sources.
-V.2.0.2 : https://github.com/BrefAvignon/BREF/releases/tag/v.2.0.2 : Correction of some issues, concerning profession, found during the integrations of version 2.0.0; creation of field CodeTerritoire for overseas territories. Corrections regarding other mandate duplicates, more specifically, mandates differing only by their end motive.
-V.2.0.0 : https://github.com/BrefAvignon/BREF/releases/tag/v.2.0.0 : Creation of the database with proper relational database, and migration of data from the CSV file (BRÉF v1.1.0) into a PostgreSQL system.
 
 
 ## Changelog
-
+* 2.2.0 : This version was created for the data paper (dataset1 branch). It is the v2.1.0 on which constraints were added. Fields and table names were also translated in English.
+* 2.1.0 : Additional adjustments aiming at preparing the database for the future integration of data coming from new alternative sources.
+* 2.0.2 : Correction of some issues, concerning profession, found during the integrations of version 2.0.0; creation of field CodeTerritoire for overseas territories. Corrections regarding other mandate duplicates, more specifically, mandates differing only by their end motive.
+* 2.0.1 : Correction of some issues, concerning profession, found during the integrations of version 2.0.0; creation of field CodeTerritoire for overseas territories.
+* 2.0.0 : Creation of the database with proper relational database, and migration of data from the CSV file (BRÉF v1.1.0) into a PostgreSQL system.
    
 
 ## References
