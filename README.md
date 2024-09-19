@@ -30,7 +30,8 @@ You just need to install PostgreSQL or have access to a distant PostgreSQL datab
 ## Use
 
 Launch each PosgreSQl script in order
-The data source is the cvs file : https://doi.org/10.5281/zenodo.12773349 -> it should be imported in the PostgreSQL so that the script
+The data source is the cvs file : https://doi.org/10.5281/zenodo.12773349 -> it should be imported in the PostgreSQL in schema "BREF" and table "rne_integration" so that the scripts can work.
+If you want to chane another schema name, you should change also "BREF" schema name in all the scripts
 
 
 
@@ -43,5 +44,5 @@ The data source is the cvs file : https://doi.org/10.5281/zenodo.12773349 -> it 
    
 
 ## References
-
+[datapaper will be added once published]
     
