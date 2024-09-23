@@ -2,7 +2,7 @@ BrefConversion v2.2.0
 ===================
 *Conversion of the BRÉF into a relational database*
 
-* Copyright 2020-2022 Émilie Volpi
+* Copyright 2020-2024 Émilie Volpi
 
 BrefConversion is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation. For source availability and license information see licence.txt
 
@@ -21,15 +21,21 @@ The input data is the first version of the BRÉF, taking the form of a single `C
 
 There are 2 branchs :
 * main branch : scripts used to created the production version of BREF, used here https://interface-bref.huma-num.fr/
-* dataset1 branch : same as main until script n°5 than specifica script to create the first dataset v2.2.0
+* dataset1 branch : same as main until script n°5 than specific scripts to create BRÉF v2.2.0
 
 
 ## Installation
-You just need to install a `PostgreSQL` server, or have access to a distant PostgreSQL database through the terminal or `pgAdmin`.
-    
+The scripts require to install a [`PostgreSQL`](https://www.postgresql.org/) server, or have access to a distant PostgreSQL database through the terminal or [`pgAdmin`](https://www.pgadmin.org/).
+
 
 ## Use
 Run each `PosgreSQl` script in the specified order. If you want to use another schema name, you should adapt the schema name `BREF` in all concerned scripts.
+1. File `1-structure_creation.sql` initializes the database and creates the tables.
+2. File `2-data_insertion.sql` populates the empty dataset with the data from BRÉF, resulting in BRÉF v2.0.0.
+3. File `3-cleaning_integration.sql` corrects some issues and adds field `CodeTerritoire` for overseas territories, resulting in BRÉF v2.0.1.
+4. File `4-additional_corrections.sql` corrects issues regarding mandate differing only by their end motive, resulting in BRÉF v2.0.2.
+5. File `5-additional_corrections.sql` prepares the database for the future integration of data coming from new alternative sources, resulting in BRÉF v2.1.0.
+6. File `6-additional_corrections.sql` adds a few additional constraints, translates table and field names to English, resulting in BRÉF v2.2.0 (the version presented in the datapaper).
 
 
 ## Changelog
