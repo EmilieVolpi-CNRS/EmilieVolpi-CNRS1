@@ -1,4 +1,4 @@
-BrefConversion v2.1.1
+BrefConversion v2.2.0
 ===================
 *Conversion of the BRÉF into a relational database*
 
