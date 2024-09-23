@@ -25,7 +25,7 @@ There are 2 branchs :
 
 
 ## Installation
-The scripts require to install a [`PostgreSQL`](https://www.postgresql.org/) server, or have access to a distant PostgreSQL database through the terminal or [`pgAdmin`](https://www.pgadmin.org/).
+The scripts require to install a [`PostgreSQL`](https://www.postgresql.org/) server, or have access to a distant `PostgreSQL` database through the terminal or [`pgAdmin`](https://www.pgadmin.org/).
 
 
 ## Use
