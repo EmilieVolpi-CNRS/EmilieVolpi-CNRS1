@@ -5277,19 +5277,3 @@ delete from "BREF"."Individu"
 where "IdIndividu" = 'EUR_0000917';
 
 --- fin traitement de ces 20 individus
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
