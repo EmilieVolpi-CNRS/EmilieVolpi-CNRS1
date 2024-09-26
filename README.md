@@ -13,7 +13,13 @@ BrefConversion is free software: you can redistribute it and/or modify it under 
 -----------------------------------------------------------------------
 
 ## Description
-This set of `PostgreSQL` scripts was written to convert the BRÉF from a single table to a proper relational database. The BRÉF (Base de données Révisée des Élu·es de France -- Revised Database of Representatives Elected in France) contains a description of all types of representatives elected in France under the Fifth Republic. The first version of this database takes the form of a single table, available on [Zenodo](https://doi.org/10.5281/zenodo.13822771) and produced by the source code available in repository [BrefInit](https://github.com/BrefAvignon/BrefInit/). It is mainly based on the RNE (Répertoire National des Élus -- National Registry of Elected Representatives), the open data base of the French Parliament (including both the National Assembly and Senate), as well as the European Parliament website. The scripts from this `BrefConversion` repository were designed to initialize a proper relational database, implement additional constraints, migrate the data from the first version of the BRÉF, clean and correct certain errors. The resulting data are available online on [Zenodo](https://doi.org/10.5281/zenodo.13834830).
+This set of `PostgreSQL` scripts was written to convert the BRÉF from a single table to a proper relational database. The BRÉF (Base de données Révisée des Élu·es de France -- Revised Database of Representatives Elected in France) contains a description of all types of representatives elected in France under the Fifth Republic. 
+
+<p align="center">
+  <img src="./logo_bref.svg" width="30%">
+</p>
+
+The first version of this database takes the form of a single table, available on [Zenodo](https://doi.org/10.5281/zenodo.13822771) and produced by the source code available in repository [BrefInit](https://github.com/BrefAvignon/BrefInit/). It is mainly based on the RNE (Répertoire National des Élus -- National Registry of Elected Representatives), the open data base of the French Parliament (including both the National Assembly and Senate), as well as the European Parliament website. The scripts from this `BrefConversion` repository were designed to initialize a proper relational database, implement additional constraints, migrate the data from the first version of the BRÉF, clean and correct certain errors. The resulting data are available online on [Zenodo](https://doi.org/10.5281/zenodo.13834830).
 
 
 ## Data
