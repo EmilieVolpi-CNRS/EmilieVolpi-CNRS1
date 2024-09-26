@@ -21,7 +21,7 @@ The input data is the first version of the BRÉF, taking the form of a single `C
 
 
 ## Installation
-The scripts require to install a [`PostgreSQL`](https://www.postgresql.org/) server, or have access to a distant `PostgreSQL` database through the terminal or [`pgAdmin`](https://www.pgadmin.org/).
+The scripts require to install a [`PostgreSQL`](https://www.postgresql.org/) server, or have access to a distant `PostgreSQL` database through the terminal or [`pgAdmin`](https://www.pgadmin.org/). They were tested on version 11 of `PostgreSQL`.
 
 
 ## Use
