@@ -1,4 +1,4 @@
-BrefConversion v2.2.0
+BrefConversion v2.x.x
 ===================
 *Conversion of the BRÉF into a relational database*
 
@@ -41,7 +41,8 @@ Run each `PosgreSQl` script in the specified order. If you want to use another s
 
 
 ## Changelog
-* 2.2.0 : Addition of extra constraints, translation of the field and table names in English. This is the version used for the datapaper.
+* 2.x.x : TODO.
+* 2.2.0 : Addition of extra constraints, translation of the field and table names in English. This version was produced only for the datapaper, and not used to develop the subsequent versions of the database.
 * 2.1.0 : Additional adjustments aiming at preparing the database for the future integration of data coming from new alternative sources.
 * 2.0.2 : Corrections of some issues regarding mandate duplicates, more specifically, mandates differing only by their end motive.
 * 2.0.1 : Correction of some issues concerning the representatives' profession identified during the integration; creation of field `CodeTerritoire` for overseas territories.
