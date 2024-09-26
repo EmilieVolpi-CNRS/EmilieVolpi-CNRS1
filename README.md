@@ -26,13 +26,14 @@ The scripts require to install a [`PostgreSQL`](https://www.postgresql.org/) ser
 
 ## Use
 Run each `PosgreSQl` script in the specified order. If you want to use another schema name, you should adapt the schema name `BREF` in all concerned scripts.
-1. File `1-structure_creation.sql` initializes the database and creates the tables.
-2. File `2-data_insertion_2.0.0.sql` populates the empty dataset with the data from BRÉF, resulting in BRÉF v2.0.0.
+1. File `1-structure_creation_2.0.0.sql` initializes the database and creates the tables.
+2. File `2-data_insertion_2.0.0.sql` populates the empty dataset with the data from BRÉF v1, resulting in BRÉF v2.0.0.
 3. File `3-cleaning_integration_2.0.1.sql` corrects some issues and adds field `CodeTerritoire` for overseas territories, resulting in BRÉF v2.0.1.
-4. File `4-additional_corrections_2.0.2.sql` corrects issues regarding mandate differing only by their end motive, resulting in BRÉF v2.0.2.
-5. File `5-additional_corrections_2.1.0.sql` prepares the database for the future integration of data coming from new alternative sources, resulting in BRÉF v2.1.0.
-6. File `6-additional_constraints.sql` adds a few additional constraints.
-7. File `7-translation_completion_2.2.0.sql` translates table and field names to English, resulting in BRÉF v2.2.0 (the version presented in the datapaper).
+4. File `4-additional_corrections_2.0.2.sql` corrects issues regarding mandate differing only by their end motive.
+5. File `5-additional_corrections_2.0.2.sql` extra corrections, resulting in BRÉF v2.0.2.
+6. File `6-additional_corrections_v2.1.0.sql` prepares the database for the future integration of data coming from new alternative sources, resulting in BRÉF v2.1.0.
+7. File `7-additional_constraints_2.2.0.sql` adds a few additional constraints.
+8. File `8-translation_completion_2.2.0.sql` translates table and field names to English, resulting in BRÉF v2.2.0 (version presented in the datapaper).
 
 
 ## Changelog
