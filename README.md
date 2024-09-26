@@ -19,10 +19,6 @@ This set of `PostgreSQL` scripts was written to convert the BRÉF from a single 
 ## Data
 The input data is the first version of the BRÉF, taking the form of a single `CSV` file . It should be imported in the `PostgreSQL` system, in schema `BREF` and table `rne_integration` so that the scripts can work.
 
-There are 2 branchs :
-* main branch : scripts used to created the production version of BREF, used here https://interface-bref.huma-num.fr/
-* dataset1 branch : same as main until script n°5 than specific scripts to create BRÉF v2.2.0
-
 
 ## Installation
 The scripts require to install a [`PostgreSQL`](https://www.postgresql.org/) server, or have access to a distant `PostgreSQL` database through the terminal or [`pgAdmin`](https://www.pgadmin.org/). They were tested on version 11 of `PostgreSQL`.
