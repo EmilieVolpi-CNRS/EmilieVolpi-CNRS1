@@ -1,0 +1,1 @@
+update "BREF"."PoliticalNuance" set "PoliticalNuanceName" = TRIM("PoliticalNuanceName");
