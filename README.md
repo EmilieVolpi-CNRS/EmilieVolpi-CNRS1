@@ -60,15 +60,17 @@ Run each `PosgreSQl` script in the specified order. If you want to use another s
 6. File `6-additional_corrections_v2.1.0.sql` prepares the database for the future integration of data coming from new alternative sources, resulting in BRÉF v2.1.0.
 7. File `7-additional_constraints_2.2.0.sql` adds a few additional constraints.
 8. File `8-translation_completion_2.2.0.sql` translates table and field names to English, resulting in BRÉF v2.2.0 (version presented in the datapaper).
-
+9. File `9-renaming_2.2.1.sql` rename wrong fields names that were gived back by the datapaper'review, resulting in BRÉF v2.2.1
+10. File `10-cleaning_political_nuance_2.2.2.sql` clean spaces (with trim) in field PolitcalNuanceName, resulting in BRÉF v2.2.0 (version presented in the datapaper v2).
 
 ## Changelog
+* 2.2.2 : Database with proper field without spaces
+* 2.2.1 : Database with proper names
 * 2.2.0 : Addition of extra constraints, translation of the field and table names in English. This is the version used for the datapaper.
 * 2.1.0 : Additional adjustments aiming at preparing the database for the future integration of data coming from new alternative sources.
 * 2.0.2 : Corrections of some issues regarding mandate duplicates, more specifically, mandates differing only by their end motive.
 * 2.0.1 : Correction of some issues concerning the representatives' profession identified during the integration; creation of field `CodeTerritoire` for overseas territories.
 * 2.0.0 : Creation of the database with proper relational structure, and migration of data from the `CSV` file into a `PostgreSQL` system.
-   
 
 ## References
 * **[LFM'20]** V. Labatut, N. Févrat & G. Marrel, *BRÉF – Base de données Révisée des Élu·es de France*, Technical Report, Avignon Université, 2020. [⟨hal-02886580⟩](https://hal.archives-ouvertes.fr/hal-02886580)
